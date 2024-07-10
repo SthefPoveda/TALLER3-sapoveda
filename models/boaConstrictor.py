@@ -9,14 +9,14 @@ class Boa_Constrictor(Animal_Exotico):
         return "¡Tsss!"
     
     def contar_ratonescomidos(self):
-        if self._ratonescomidos >= 10:
+        if self._ratonescomidos >= 20:
             raise ValueError("Demasiados Ratones!")
         return self._ratonescomidos + 1
     
     def comer_raton(self):
-        if self._ratonescomidos >= 10:
+        if self._ratonescomidos >= 20:
             raise ValueError(f"La boa está llena! ratones comidos: {self._ratonescomidos}")
-        elif self._ratonescomidos< 10:
+        elif self._ratonescomidos< 20:
             return self._ratonescomidos + 1
         else:
             return "Esta Boa no existe!"
